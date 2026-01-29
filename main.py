@@ -25,8 +25,8 @@ from broadcast_window import launch_broadcast_window
 
 
 # Paths
-MODEL_PATH = "alphabet_pose_mlp_24letters.keras"
-LABELS_PATH = "alphabet_labels_24letters.npy"
+MODEL_PATH = "models/alphabet_pose_mlp_24letters.keras"
+LABELS_PATH = "models/alphabet_labels_24letters.npy"
 
 
 # --- CONFIGURATION ---

@@ -3,11 +3,14 @@ import time
 import os
 
 # --- CONFIGURATION ---
-TARGET_FILE = "vocab_memory.json"
-N_ORDER = 5  # Learn sequences up to 5 words long
+
+script_dir = os.path.dirname(os.path.abspath(__file__))
+root_dir = os.path.dirname(script_dir)
+TARGET_FILE = os.path.join(root_dir, "vocab_memory.json")
+N_ORDER = 5 
 
 
-YOUR_CUSTOM_DATA = [
+CUSTOM_DATA = [
 "That is a valid point",
 "I see what you mean",
 "Let us discuss this",
@@ -413,12 +416,12 @@ YOUR_CUSTOM_DATA = [
 
 def train_model():
     # 1. Validation
-    if not YOUR_CUSTOM_DATA:
+    if not CUSTOM_DATA:
         print("ERROR: The dataset is empty!")
-        print("Please paste your AI-generated sentences into the 'YOUR_CUSTOM_DATA' list in the script.")
+        print("Please paste your AI-generated sentences into the 'CUSTOM_DATA' list in the script.")
         return
 
-    print(f"Processing {len(YOUR_CUSTOM_DATA)} sentences...")
+    print(f"Processing {len(CUSTOM_DATA)} sentences...")
     
     # 2. Load or Initialize Memory
     if os.path.exists(TARGET_FILE):
@@ -445,7 +448,7 @@ def train_model():
 
     count_ngrams = 0
     
-    for sentence in YOUR_CUSTOM_DATA:
+    for sentence in CUSTOM_DATA:
         # Clean the sentence
         clean_sentence = " ".join(sentence.upper().strip().split())
         words = clean_sentence.split()
