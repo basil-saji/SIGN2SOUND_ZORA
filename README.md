@@ -1,10 +1,9 @@
 # Sign2Sound: Precision-First Sign Language Communication
 ### **Team Zora | Phase 2 Submission**
 
-![Status](https://img.shields.io/badge/Status-Production%20Ready-success)
-![Latency](https://img.shields.io/badge/Latency-%3C50ms-blue)
-![Accuracy](https://img.shields.io/badge/Accuracy-98.0%25-green)
+![Python](https://img.shields.io/badge/Python-3.10+-green)
 ![Platform](https://img.shields.io/badge/Platform-CPU%20Optimized-orange)
+![License](https://img.shields.io/badge/License-MIT-blue)
 
 > **Sign2Sound** is an integrated communication system that bridges the gap between static fingerspelling and fluent digital conversation. Unlike standard recognition models, we utilize **Geometric Feature Extraction** and **Predictive Text Intelligence** to deliver zero-latency, high-precision translation without the need for heavy GPUs.
 
@@ -45,6 +44,7 @@ SIGN2SOUND_TeamZora/
 ├── requirements.txt
 ├── .gitignore
 ├── README.md
+├── LICENSE
 │
 ├── 📂 src/                         # CORE LOGIC MODULES
 │   ├── features_alphabet.py        # Geometric feature extraction (Math)
@@ -150,4 +150,5 @@ See results/confusion_matrix.png for a detailed per-class breakdown.
 
 * **Focus:** Accessibility & Human-Computer Interaction.
 * **Mission:** To build tools that don't just "demo well," but actually work in the real world
+
 
