@@ -26,7 +26,11 @@ Fingerspelling every letter is slow. Our **N-Gram Context Engine** accelerates c
 ### 3. Remote Broadcasting ("The Studio")
 We solved the visibility problem. The signer does not need to show their laptop screen to the audience.
 * **Real-Time Sync:** Text is pushed to a Supabase cloud database in <50ms.
-* **PWA Receiver:** Any external device (smartphone, tablet, laptop) can scan a QR code to view and listen to the live transcript instantly. The best part? **No signup or installation required!**
+* **PWA Receiver:** Any external device (smartphone, tablet, laptop) can scan a QR code to view and listen to the live transcript instantly. The best part? **No signup or installation required!**. Try [Sign2Sound Studio](https://sign2sound.vercel.app)
+  
+  <img width="2560" height="1600" alt="image" src="https://github.com/user-attachments/assets/945f67d5-7862-4f0b-a839-2125bb511a9d" />
+
+
 
 ---
 
@@ -146,3 +150,4 @@ See results/confusion_matrix.png for a detailed per-class breakdown.
 
 * **Focus:** Accessibility & Human-Computer Interaction.
 * **Mission:** To build tools that don't just "demo well," but actually work in the real world
+
